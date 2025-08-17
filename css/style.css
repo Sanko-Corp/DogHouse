@@ -131,8 +131,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 50%, rgba(78, 205, 196, 0.1) 0%, transparent 50%);
 }
 
 .hero-content {
@@ -404,12 +402,7 @@ body {
     color: var(--text-light);
 }
 
-.room-features li::before {
-    content: " ";
-    color: var(--secondary-color);
-    font-weight: bold;
-    margin-right: 0.5rem;
-}
+
 
 .room-images {
     display: grid;
@@ -848,4 +841,49 @@ img {
     .form-group textarea {
         padding: 0.6rem;
     }
+}
+
+.room-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

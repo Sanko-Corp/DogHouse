@@ -5,12 +5,10 @@ const roomData = {
         status: "available",
         price: "40,000",
         managementFee: "20,000",
-        size: "8畳",
+        size: "4.5帖",
         features: [
-            "南向き",
             "エアコン付き",
-            "クローゼット有",
-            "ペット同居可"
+            "ベッド付き"
         ],
         images: [
             "resource/チワワ/チワワ1.jpg",
@@ -23,12 +21,10 @@ const roomData = {
         status: "available",
         price: "50,000",
         managementFee: "20,000",
-        size: "10畳",
+        size: "10帖",
         features: [
-            "角部屋",
-            "バルコニー付き",
-            "エアコン・収納完備",
-            "ペット同居可"
+            "エアコン付き",
+            "ベッド付き"
         ],
         images: [
             "resource/プードル/プードル1.jpg",
@@ -41,12 +37,10 @@ const roomData = {
         status: "occupied",
         price: "50,000",
         managementFee: "20,000",
-        size: "7畳",
+        size: "7帖",
         features: [
-            "東向き",
-            "コンパクト設計",
-            "収納充実",
-            "ペット同居可"
+            "エアコン付き",
+            "ベッド付き"
         ],
         images: [
             "resource/ダックス/ダックス1.jpg",
@@ -59,13 +53,10 @@ const roomData = {
         status: "available",
         price: "50,000",
         managementFee: "20,000",
-        size: "11畳",
+        size: "8.5帖",
         features: [
-            "角部屋",
-            "広々スペース",
-            "ウォークインクローゼット",
-            "ペット同居可",
-            "専用バルコニー"
+            "エアコン付き",
+            "ベッド付き"
         ],
         images: [
             "resource/マルプー/マルプー1.jpg",
@@ -91,6 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // お問い合わせフォームの初期化
     initContactForm();
+
+    // 画像モーダルの初期化
+    initImageModal();
     
     // 初回のルーム情報表示
     displayRoomInfo('chihuahua');
@@ -307,3 +301,27 @@ window.addEventListener('scroll', function() {
     
     lastScroll = currentScroll;
 });
+
+// 画像モーダル
+function initImageModal() {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".close-button");
+
+    document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'IMG' && (event.target.closest('.room-images') || event.target.closest('.common-gallery'))) {
+            modal.style.display = "block";
+            modalImg.src = event.target.src;
+        }
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}

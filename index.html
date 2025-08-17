@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DogHouse - 女性限定ペット可シェアハウス</title>
+    <title>わんわんHouse - 女性限定ペット可シェアハウス</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
             <div class="nav-container">
                 <div class="logo">
                     <span class="logo-icon">🏠🐕</span>
-                    <span class="logo-text">DogHouse</span>
+                    <span class="logo-text">わんわんHouse</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">ホーム</a></li>
@@ -52,7 +52,7 @@
 
         <section id="features" class="features">
             <div class="container">
-                <h2 class="section-title">DogHouseの特徴</h2>
+                <h2 class="section-title">わんわんHouseの特徴</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">🐾</div>
@@ -61,8 +61,8 @@
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🏃</div>
-                        <h3>無料ドッグラン</h3>
-                        <p>敷地内の広々としたドッグランが無料で使い放題（雨天時除く）</p>
+                        <h3>ドッグランとしても使えるお庭</h3>
+                        <p>広々としたお庭は、愛犬のドッグランとしてもご利用いただけます。</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">👩</div>
@@ -75,9 +75,9 @@
                         <p>不在時も安心の宅配ボックス設置</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🍖</div>
-                        <h3>BBQ可能</h3>
-                        <p>お庭でBBQが楽しめます！愛犬と一緒にアウトドア</p>
+                        <div class="feature-icon">🛋️</div>
+                        <h3>家具家電付き</h3>
+                        <p>生活に必要な家具や家電が備え付けられており、快適な生活をすぐにスタートできます。</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🌳</div>
@@ -95,8 +95,8 @@
                     <div class="dog-point">
                         <div class="point-number">01</div>
                         <div class="point-content">
-                            <h3>無料ドッグラン</h3>
-                            <p>晴れた日にはいつでも自由に使える専用ドッグランで思いきり運動できます（屋外のため雨天時は使用不可）</p>
+                            <h3>リラックスできるお庭</h3>
+                            <p>広々としたお庭で、愛犬とのびのび過ごせます。ドッグランとしてもご利用ください。</p>
                         </div>
                     </div>
                     <div class="dog-point">
@@ -133,6 +133,7 @@
                     <button class="tab-button" data-room="dachshund">ダックス</button>
                     <button class="tab-button" data-room="malpoo">マルプー</button>
                 </div>
+                <p class="room-note">※お部屋の名前と実際の犬種は無関係です。</p>
                 <div class="room-content" id="room-content">
                     <!-- ルーム情報はJavaScriptで動的に表示 -->
                 </div>
@@ -211,12 +212,12 @@
                                 <li>宅配ボックス完備</li>
                                 <li>敷地内ゴミ捨て場</li>
                                 <li>自転車1台まで駐輪場無料</li>
-                                <li>庭でBBQ可能</li>
+                                <li>家具家電付き</li>
                             </ul>
                         </div>
                     </div>
                     <div class="map-container">
-                        <iframe src="https://maps.google.com/maps?q=大阪府吹田市山手町3-1-17&t=&z=16&ie=UTF8&iwloc=&output=embed&markers=color:red%7C大阪府吹田市山手町3-1-17" 
+                        <iframe src="https://maps.google.com/maps?q=大阪府吹田市山手町3-1-17&t=&z=16&ie=UTF8&iwloc=&output=embed&ll=34.770283,135.510764&markers=color:red%7C34.770283,135.510764" 
                                 width="100%" 
                                 height="400" 
                                 style="border:0;" 
@@ -294,7 +295,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <span class="logo-icon">🏠🐕</span>
-                    <span class="logo-text">DogHouse</span>
+                    <span class="logo-text">わんわんHouse</span>
                 </div>
                 <div class="footer-info">
                     <p>女性限定ペット可シェアハウス</p>
@@ -309,12 +310,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DogHouse. All rights reserved.</p>
+                <p>&copy; 2024 わんわんHouse. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- 画像モーダル -->
+    <div id="image-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
 </body>
 </html>
