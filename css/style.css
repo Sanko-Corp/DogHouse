@@ -407,6 +407,8 @@ body {
     color: var(--text-light);
 }
 
+
+
 .room-features {
     list-style: none;
     margin: 1.5rem 0;
@@ -804,6 +806,10 @@ img {
 
     .room-info {
         grid-template-columns: 1fr;
+    }
+
+    .room-price {
+        font-size: 1.8rem;
     }
 
     .room-content {
