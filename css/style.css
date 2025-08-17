@@ -175,11 +175,20 @@ body {
 
 .hero-badge {
     background: var(--bg-white);
-    padding: 0.5rem 1.2rem;
-    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
     box-shadow: var(--shadow-md);
     font-weight: 600;
     animation: fadeInUp 0.8s ease 0.6s both;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.hero-badge-icon {
+    height: 1.5em;
+    width: auto;
+    margin-right: 0.5em;
 }
 
 .cta-button {
@@ -243,9 +252,15 @@ body {
 }
 
 .feature-icon {
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
     animation: pulse 2s infinite;
+}
+
+.feature-icon img {
+    height: 4.5rem;
+    width: auto;
+    object-fit: contain;
 }
 
 .feature-card h3 {
