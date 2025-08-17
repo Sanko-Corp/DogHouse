@@ -7,14 +7,12 @@
 :root {
     --primary-color: #FF6B6B;
     --secondary-color: #4ECDC4;
-    --accent-color: #FFE66D;
     --text-dark: #2C3E50;
     --text-light: #7F8C8D;
     --bg-light: #FFF5F5;
     --bg-white: #FFFFFF;
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
     --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
     --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
@@ -204,8 +202,6 @@ body {
     transform: translateY(-3px);
     box-shadow: var(--shadow-xl);
 }
-
-
 
 /* Features Section */
 .features {

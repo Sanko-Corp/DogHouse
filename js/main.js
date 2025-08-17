@@ -223,7 +223,6 @@ function displayRoomInfo(roomId) {
     }
 }
 
-
 // EmailJSの初期化
 function initEmailJS() {
     // EmailJSの初期化
@@ -272,11 +271,9 @@ function sendEmail(formData) {
         message: formData.message
     })
     .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
         showFormMessage('success', 'お問い合わせありがとうございます。担当者より連絡させていただきます。');
         document.getElementById('contact-form').reset();
     }, function(error) {
-        console.log('FAILED...', error);
         showFormMessage('error', '送信エラーが発生しました。もう一度お試しください。');
     });
 }
@@ -295,7 +292,6 @@ function showFormMessage(type, message) {
         formMessage.style.display = 'none';
     }, 5000);
 }
-
 
 // ヘッダーのスクロール効果
 let lastScroll = 0;
