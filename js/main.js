@@ -14,7 +14,6 @@ const roomData = {
             "resource/チワワ/チワワ1.jpg",
             "resource/チワワ/チワワ2.jpg"
         ],
-        description: "コンパクトで使いやすい、明るいお部屋です"
     },
     poodle: {
         name: "プードル",
@@ -30,7 +29,6 @@ const roomData = {
             "resource/プードル/プードル1.jpg",
             "resource/プードル/プードル2.jpg"
         ],
-        description: "バルコニー付きの広々とした快適なお部屋です"
     },
     dachshund: {
         name: "ダックス",
@@ -46,7 +44,6 @@ const roomData = {
             "resource/ダックス/ダックス1.jpg",
             "resource/ダックス/ダックス2.jpg"
         ],
-        description: "コンパクトながら機能的で住みやすいお部屋です"
     },
     malpoo: {
         name: "マルプー",
@@ -62,7 +59,6 @@ const roomData = {
             "resource/マルプー/マルプー1.jpg",
             "resource/マルプー/マルプー2.jpg"
         ],
-        description: "最も広いお部屋で、収納も充実しています"
     }
 };
 
@@ -178,7 +174,6 @@ function displayRoomInfo(roomId) {
             <div class="room-details">
                 <h3>${room.name}ルーム</h3>
                 <span class="room-status ${statusClass}">${statusText}</span>
-                <p class="room-description">${room.description}</p>
                 <div class="room-price">
                     家賃 ￥${room.price}<span>/月</span><br>
                     管理費 ￥${room.managementFee}<span>/月（光熱費・水道代込み）</span>
