@@ -176,7 +176,7 @@ function displayRoomInfo(roomId) {
                 <span class="room-status ${statusClass}">${statusText}</span>
                 <div class="room-price">
                     家賃 ￥${room.price}<span>/月</span><br>
-                    管理費 ￥${room.managementFee}<span>/月（光熱費・水道代、ペット備品込み）</span>
+                    管理費 ￥${room.managementFee}<span>/月（光熱費・水道代込み）</span>
                 </div>
                 <p class="room-size">広さ: ${room.size}</p>
                 <ul class="room-features">
