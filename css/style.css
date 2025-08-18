@@ -910,3 +910,17 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
+
+.social-menu {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    margin-left: 15px;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}

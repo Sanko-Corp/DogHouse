@@ -1,7 +1,7 @@
 // ルームデータ
 const roomData = {
     chihuahua: {
-        name: "チワワ",
+        name: "ちわわ",
         status: "available",
         price: "40,000",
         managementFee: "20,000",
@@ -16,7 +16,7 @@ const roomData = {
         ],
     },
     poodle: {
-        name: "プードル",
+        name: "ぷーどる",
         status: "available",
         price: "50,000",
         managementFee: "20,000",
@@ -31,7 +31,7 @@ const roomData = {
         ],
     },
     dachshund: {
-        name: "ダックス",
+        name: "だっくす",
         status: "occupied",
         price: "50,000",
         managementFee: "20,000",
@@ -46,7 +46,7 @@ const roomData = {
         ],
     },
     malpoo: {
-        name: "マルプー",
+        name: "まるぷー",
         status: "available",
         price: "50,000",
         managementFee: "20,000",
