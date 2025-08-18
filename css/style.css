@@ -272,7 +272,6 @@ body {
 .feature-card p {
     color: var(--text-light);
     line-height: 1.6;
-    word-wrap: break-word;
 }
 
 /* Dog Points Section */
@@ -802,20 +801,7 @@ img {
 
 
     .features-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .feature-card {
-        padding: 1rem;
-    }
-
-    .feature-card h3 {
-        font-size: 1.1rem;
-    }
-
-    .feature-card p {
-        font-size: 0.9rem;
+        grid-template-columns: 1fr;
     }
 
     .room-info {
