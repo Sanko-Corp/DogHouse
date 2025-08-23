@@ -215,7 +215,7 @@ function displayRoomInfo(roomId) {
 // EmailJSの初期化
 function initEmailJS() {
     // EmailJSの初期化
-    emailjs.init("sPX8WXXM1Aau5_KK5");
+    emailjs.init("RfdGIdQwtZW4mrfnS");
 }
 
 // お問い合わせフォームの初期化
@@ -249,7 +249,7 @@ function sendEmail(formData) {
     const formMessage = document.getElementById('form-message');
     
     // EmailJSで実際にメール送信
-    emailjs.send('service_doghouse', 'template_contact', {
+    emailjs.send('service_p5y4yb5', 'template_063jg1z', {
         to_email: '1supagety@gmail.com',
         from_name: formData.name,
         from_email: formData.email,
@@ -264,6 +264,7 @@ function sendEmail(formData) {
         document.getElementById('contact-form').reset();
     }, function(error) {
         showFormMessage('error', '送信エラーが発生しました。もう一度お試しください。');
+        console.log('EmailJS error:', error);
     });
 }
 
