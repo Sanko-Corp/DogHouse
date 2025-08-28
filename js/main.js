@@ -32,7 +32,7 @@ const roomData = {
     },
     dachshund: {
         name: "だっくす",
-        status: "occupied",
+        status: "available",
         price: "50,000",
         managementFee: "20,000",
         size: "7帖",
